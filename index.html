@@ -2,17 +2,34 @@
 <html lang="es">
   <head>
     <style>
+      body{
+        width: 1000px;
+      }
+
       header{
-       /* width: 1000px;*/
-        background-color: bisque;
         text-align: center;
       }
+
+      header ul{
+        list-style-type: none;
+      }
+
+      header li{
+        display: inline-block;
+        margin: 3px;
+      }
+
+      footer{
+        height: 200px;
+        
+      }
+
     </style>
 
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>El palacio de la irreverencia</title>
+    <title>Club de Fans de Melendi</title>
   </head>
   <body>
     <header>
@@ -33,7 +50,7 @@
       </nav>
     </header>
 
-    <section style="background-color: blue;">
+    <section>
       <h2>¿Quienes Somos?</h2>
       <p>
         El club de fans de melendi somos un proyecto nacido de la esperanza y la
@@ -46,10 +63,15 @@
       </p>
     </section>
 
-    <footer style="background-color: gray;">
-      <!---->
-      <img src="./img/instagram-ico.png" alt="" height="25" width="25">
-      <p>Instagram</p>
+    <footer >
+      <!-- 3 divisionses redes sociales, contactos y otro  -->
+      <div style="position:relative; top: 10px; left: 80px; width: 333px;">
+        <p>Síguenos!</p>
+        <img src="./img/instagram-ico.png" alt="" height="25" width="25" >
+        <img src="./img/Twitter.png" alt="" height="25" width="25" >
+        <img src="./img/yotube.png" alt="" height="25" width="25" >
+        <img src="./img/github.png" alt="" height="25" width="25" >
+      </div>
     </footer>
   </body>
 </html>
