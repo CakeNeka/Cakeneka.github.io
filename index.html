@@ -2,30 +2,60 @@
 <html lang="es">
   <head>
     <style>
+      *{
+        margin: 0;
+        padding: 0;
+      }
+
       body{
-        width: 1000px;
+        width: 960px;
+        margin: auto;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        background-color: rgb(255, 222, 211);
       }
 
       header{
+        color: rgb(255, 255, 255);
         text-align: center;
+        background-image: url(./img/700_420Melendi.jpg);
+        height: 400px;
       }
 
-      header ul{
+      nav{
+        height: 50px;
+
+        background-color: rgb(0, 0, 0);
+        color: white;
+        top:350px;
+        align-items: center;
+        justify-content: center;
+      }
+
+      nav ul{
         list-style-type: none;
       }
-
-      header li{
+      
+      nav li{
         display: inline-block;
-        margin: 3px;
+        margin: 0px;
+      }
+
+      li a{
+        display: block;
+        text-decoration: none;
+        padding: 15px ;
+        color: white;;
+      }
+
+      li a:hover{
+        background-color: rgb(26, 26, 26);
       }
 
       footer{
         height: 200px;
-        
       }
 
     </style>
-
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -34,43 +64,38 @@
   <body>
     <header>
       <h1>Club de Fans de Melendi</h1>
-      <img
-        src="./img/700_420Melendi.jpg"
-        alt="Melendi Club de fons"
-        height="300"
-      />
-      
-      <nav>
-        <ul>
-          <li><a href="">Inicio</a></li>
-          <li><a href="">Galería</a></li>
-          <li><a href="">Contacto</a></li><!--Aquí debe haber un formulario-->
-          <li><a href="">Donde estamos</a></li><!--Aquí ubicación-->
-        </ul>
-      </nav>
+
     </header>
+    <nav>
+      <ul>
+        <li><a href="">Inicio</a></li>
+        <li><a href="">Galería</a></li>
+        <li><a href="">Contacto</a></li><!--Aquí debe haber un formulario-->
+        <li><a href="">Donde estamos</a></li><!--Aquí ubicación-->
+      </ul>
+    </nav>
 
     <section>
       <h2>¿Quienes Somos?</h2>
       <p>
-        El club de fans de melendi somos un proyecto nacido de la esperanza y la
-        pasión por la música. Un proyecto de superación personal y de dedicación
-        absoluta. 
+        El club de fans de melendi somos un proyecto nacido de la esperanza y
+        lapasión por la música. Un proyecto de superación personal y de
+        dedicación absoluta.
       </p>
-      
+
       <p>
         Nuestro club está formado por pizas grandes, medianas y familiares
       </p>
     </section>
 
-    <footer >
+    <footer style="border: 30px;">
       <!-- 3 divisionses redes sociales, contactos y otro  -->
-      <div style="position:relative; top: 10px; left: 80px; width: 333px;">
+      <div>
         <p>Síguenos!</p>
-        <img src="./img/instagram-ico.png" alt="" height="25" width="25" >
-        <img src="./img/Twitter.png" alt="" height="25" width="25" >
-        <img src="./img/yotube.png" alt="" height="25" width="25" >
-        <img src="./img/github.png" alt="" height="25" width="25" >
+        <img src="./img/instagram-ico.png" alt="" height="25" width="25">
+        <img src="./img/Twitter.png" alt="" height="25" width="25">
+        <img src="./img/yotube.png" alt="" height="25" width="25">
+        <img src="./img/github.png" alt="" height="25" width="25">
       </div>
     </footer>
   </body>
