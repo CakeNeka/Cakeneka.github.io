@@ -3,83 +3,10 @@
 
 <head>
     <meta charset="UTF-8" />
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-        }
-
-        body {
-            max-width: 960px;
-            margin: auto;
-            font-family: Verdana;
-            background-color: rgb(41, 41, 41);
-        }
-
-        header {
-            color: lightgray;
-            text-align: center;
-            background-image: url(./img/background.png);
-            height: 300px;
-            font-variant: small-caps;
-        }
-
-        nav {
-            height: 50px;
-            background-color: rgb(0, 0, 0);
-            color: white;
-        }
-
-        nav ul {
-            list-style-type: none;
-        }
-
-        nav li {
-            display: inline-block;
-            margin: 0px;
-        }
-
-        li a {
-            display: block;
-            text-decoration: none;
-            padding: 15px;
-            color: white;
-        }
-
-        li a:hover {
-            background-color: rgb(26, 26, 26);
-        }
-
-        footer {
-            background-color: darkgray;
-            color: white;
-            height: 150px;
-            text-align: center;
-            padding-top: 10px;
-        }
-
-        section {
-            padding: 20px;
-            background-color: lightgray;
-        }
-
-        article {
-            margin: 10px;
-        }
-
-        form fieldset {
-            padding: 15px;
-            margin: 10px;
-        }
-
-        h2 {
-            text-align: center;
-        }
-    </style>
-
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Club de Fans de Baldur's Gate II</title>
+    <title>Contacto</title>
+    <link rel="stylesheet" href="style.css" />
     <link rel="icon" type="image/x-icon" href="./img/favicon.ico">
 </head>
 
@@ -91,14 +18,13 @@
         <ul>
             <li><a href="index.html">Inicio</a></li>
             <li><a href="galeria.html">Galería</a></li>
-            <li><a href="contacto.html">Contacto</a></li>
-            <!--Aquí debe haber un formulario-->
+            <li><a href="contacto.html"><b>Contacto</b></a></li>
             <li><a href="ubicacion.html">Donde estamos</a></li>
-            <!--Aquí ubicación-->
         </ul>
     </nav>
 
     <section>
+        <img src="./img/enhaced.png" alt="Baldur2 icon" width="65" height="65" style="margin-left: 427.5px;">
         <h2>Contacta con Nosotros</h2>
         <article>
             <form action="">
@@ -114,13 +40,13 @@
                     <legend>Motivo del contacto</legend>
                     <label for="Seleccione una opción"></label>
 
-                    <input type="radio" id="unirme" name="best_game" value="unirme" />
+                    <input type="radio" id="unirme" name="opcion" value="unirme" />
                     <label for="unirme">Quiero unirme al club de fans</label> <br>
-                    <input type="radio" id="comentario" name="best_game" value="comentario" />
+                    <input type="radio" id="comentario" name="opcion" value="comentario" />
                     <label for="comentario">Quiero aportar un comentario</label> <br>
-                    <input type="radio" id="mejorar" name="best_game" value="mejorar" />
+                    <input type="radio" id="mejorar" name="opcion" value="mejorar" />
                     <label for="mejorar">Quiero mejorar la página web</label> <br>
-                    <input type="radio" id="otro" name="best_game" value="otro" />
+                    <input type="radio" id="otro" name="opcion" value="otro" />
                     <label for="otro">Otro</label> <br>
                 </fieldset>
                 <fieldset>
