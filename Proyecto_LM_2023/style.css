@@ -1,3 +1,4 @@
+/* Reglas globales (para eliminar los márgenes que vienen por defecto)*/
 * {
   margin: 0;
   padding: 0;
@@ -6,13 +7,13 @@
 
 body {
   font-family: Verdana, sans-serif;
-  background-color: rgb(40, 42, 54);
   color: rgb(248, 248, 242);
 }
+
 p{
   margin-top: 15px;
 }
-h1, h2 {
+h1{
   font-family: 'Cinzel', serif;
 }
 
@@ -22,12 +23,10 @@ header {
   width: 100%;
   font-variant: small-caps;
 }
-/* Navbar styles */
+/* Estilos de la barra de navegación */
 
 nav {
   width: 100%;
-  height: 80px;
-  height: auto;
   background-color: rgb(0, 0, 0);
   top: 0;
   position: sticky;
@@ -40,14 +39,16 @@ nav ul {
   list-style-type: none;
   margin: auto;
   width: fit-content;
-  height: 100%;
   overflow: hidden;
 }
+
+/* La propiedad transition añade una animación simple  */
+/* Se especifica la propiedad que cambia, la duración y el efecto */
 
 nav li {
   float: left;
   transition: background-color 300ms ease-out;
-  height: 80px;
+  height: 60px;
   width: 130px;
 }
 
@@ -62,34 +63,56 @@ nav li a {
   transform: translate(0%, -50%);
 }
 
+#navImg {
+  width: 40px;
+}
+
+/* Explicar transform translate */
+
 nav li:hover {
   background-color: rgb(103, 107, 134);
 }
 
-#navImg {
-  width: 50px;
+/* Capa de Presentación (inicio) */
+#presentacion {
+  width: 100%;
+  height: 600px;
+  background-image: url(./img/background.jpg);
+  background-size: cover;
 }
+
+/* Capa contenedora y columnas derecha, central e izquierda */
 
 #contenedor {
-  width: 80%;
+  width: 100%;
   margin: auto;
-  background-color: rgb(68 71 90);
+  background-color: rgb(40, 42, 54);
   padding: 30px 60px;
-  height: 10000px;
+  overflow: hidden;
 }
 
-#derecha {
+
+.columnaCentral{
+  width: 60%;
+  margin: auto;
+}
+
+.columnaDerecha {
   float: right;
-  width: 50%;
+  width: 18%;
 }
 
 .columnaIzquierda {
   float: left;
-  width: 17%;
+  width: 18%;
 }
 
+/* Clases para imágenes */
+
 .round {
+  width: 100%;
   border-radius: 50%;
+  margin-top: 15px;
 }
 
 .roundRight {
@@ -98,12 +121,14 @@ nav li:hover {
 }
 
 h2 {
+  font-family: 'Cinzel', serif;
   font-size: 1.2em;
   padding-top: 20px;
   font-weight: bold;
-  color: rgb(255 121 198);
+  color: rgb(255, 121, 198);
 }
 
+/* Lista con estilo de imagen */
 ul.puntos {
   margin-top: 15px;
 }
@@ -111,10 +136,19 @@ ul.puntos {
 ul.puntos li{
   list-style-image: url("./img/punto.png");
   margin-left: 20px;
-
 }
 
-.centered{
-  width: 60%;
-  margin: auto;
+/* footer y columnas del footer */
+
+footer {
+  background-color: rgb(68 71 90);
+  width: 100%;
+  padding: 30px 60px;
+  overflow: hidden;
+}
+
+.footerColumna {
+  text-align: center;
+  width: 33.33%;
+  float: left;
 }
