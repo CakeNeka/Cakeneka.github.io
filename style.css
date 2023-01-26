@@ -14,17 +14,12 @@ h1{
   font-family: 'Cinzel', serif;
 }
 
-header {
-  text-align: center;
-  height: 100px;
-  width: 100%;
-  font-variant: small-caps;
-}
 /* Estilos de la barra de navegación */
 
 nav {
   width: 100%;
   background-color: rgb(0, 0, 0);
+  background: linear-gradient(180deg, rgb(0, 0, 0) 0%, rgba(0,0,0,1) 50%, rgb(94, 94, 94) 100%);
   top: 0;
   position: sticky;
   font-family: 'Cinzel', serif;
@@ -49,6 +44,14 @@ nav li {
   width: 130px;
 }
 
+nav li:hover {
+  border-bottom: 3px solid rgb(255 121 198);
+}
+
+nav li.actual {
+  border-bottom: 3px solid rgb(139 233 253);
+}
+
 nav li a {
   display: block;
   text-align: center;
@@ -66,22 +69,21 @@ nav li a {
 
 /* Explicar transform translate */
 
-nav li:hover {
-  background-color: rgb(103, 107, 134);
-}
+
 
 /* Capa de Presentación (inicio) */
-#presentacion {
+#landing {
   width: 100%;
-  height: 600px;
+  height: calc(100vh - 60px);  /* vh (viewport height) es el porcentaje de la altura actual del navegador */
+  
   background-image: url(./img/background.jpg);
   background-size: cover;
+  background-attachment: fixed;
 
   font-family: 'Cinzel Decorative', cursive;
   font-weight: bolder;
-  font-size: 4em;
+  font-size: 3em;
   text-align: center;
-  color: rgb(189, 147, 249) ;
 }
 
 /* Capa contenedora y columnas derecha, central e izquierda */
@@ -92,6 +94,7 @@ nav li:hover {
   background-color: rgb(40, 42, 54);
   padding: 30px 60px;
   overflow: hidden;
+  border-top: rgb(255, 121, 198) 3px solid;
 }
 
 
@@ -139,6 +142,7 @@ h3 {
   font-family: 'Cinzel', serif;
   font-weight: normal;
   color: rgb(241 250 140);
+  margin-bottom: 15px;
 }
 
 /* Lista con estilo de imagen */
@@ -165,4 +169,25 @@ footer {
   text-align: center;
   width: 25%;
   float: left;
+}
+
+footer img {
+  height: 50px;
+  width: 50px;
+  padding: 10px;
+}
+
+footer img:hover {
+  border-radius: 20%;
+  background-color: rgb(241 250 140) ;
+}
+
+footer a {
+  text-decoration: none;
+  color: rgb(241 250 140);;
+  font-weight: 150;
+}
+
+footer a:hover {
+  text-decoration: underline solid 3px;
 }
