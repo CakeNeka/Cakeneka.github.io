@@ -95,8 +95,8 @@ nav li a {
   position:relative;
   top: 10%;
   bottom: 10%;
-  color: black;
-  z-index: 1;
+  color: rgb(255 184 108);
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
 }
 
 #landingTitle img {
@@ -106,9 +106,9 @@ nav li a {
 /* Capa contenedora y columnas derecha, central e izquierda */
 
 #contenedor {
-  width: 100%;
+  width: 90%;
   margin: auto;
-  background-color: rgba(40, 42, 54, 0.897);
+  background-color: rgb(40, 42, 54);
   padding: 30px 60px;
   overflow: hidden;
   border-top: rgb(255, 121, 198) 3px solid;
@@ -176,10 +176,12 @@ ul.puntos li{
 
 footer {
   border-top: 3px solid rgb(241 250 140);
-  background-color: rgb(68 71 90);
+  background-color: rgba(68, 71, 90, 0.897);
   width: 100%;
   padding: 30px 60px;
   overflow: hidden;
+
+
 }
 
 .footerColumna {
