@@ -13,9 +13,7 @@ body {
   background-attachment: fixed;
 }
 
-h1{
-  font-family: 'Cinzel', serif;
-}
+
 
 /* Estilos de la barra de navegación */
 
@@ -38,9 +36,6 @@ nav ul {
   overflow: hidden;
 }
 
-/* La propiedad transition añade una animación simple  */
-/* Se especifica la propiedad que cambia, la duración y el efecto */
-
 nav li {
   float: left;
   transition: background-color 300ms ease-out;
@@ -60,17 +55,17 @@ nav li a {
   display: block;
   text-align: center;
   text-decoration: none;
-  color: rgb(255 121 198);
+  color: rgb(255, 121, 198);
   padding: 25px;
   position: relative;
   top: 50%;
   transform: translate(0%, -50%);
 }
-
+/* Explicar transform translate */
 #navImg {
   width: 40px;
 }
-/* Explicar transform translate */
+
 
 
 
@@ -104,7 +99,7 @@ nav li a {
 }
 
 /* Capa contenedora y columnas derecha, central e izquierda */
-
+/* Para la maquetación del cuerpo de la página */
 #contenedor {
   width: 90%;
   margin: auto;
@@ -114,20 +109,23 @@ nav li a {
   border-top: rgb(255, 121, 198) 3px solid;
 }
 
-
-.columnaCentral{
-  width: 60%;
-  margin: auto;
+.columnaIzquierda {
+  float: left;
+  width: 45%;
 }
 
 .columnaDerecha {
   float: right;
-  width: 18%;
+  width: 45%;
 }
 
-.columnaIzquierda {
-  float: left;
-  width: 18%;
+/* Otras clases para la maquetación */
+.presentacion {
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.61);
+  padding: 20px;
+  margin-top: 20px;
+  border-radius: 15px;
 }
 
 /* Clases para imágenes */
@@ -138,14 +136,15 @@ nav li a {
   margin-bottom: 15px;
 }
 
-.roundRight {
-  border-radius: 50%;
-  float: right;
+/* Reglas de estilo de los títulos */
+
+h1{
+  font-family: 'Cinzel', serif;
 }
 
 h2 {
   font-family: 'Cinzel', serif;
-  font-size: 1.2em;
+  font-size: 1.7em;
   margin-bottom: 10px;
   font-weight: bold;
   color: rgb(255, 121, 198);
@@ -162,7 +161,7 @@ h3 {
   margin-bottom: 15px;
 }
 
-/* Lista con estilo de imagen */
+/* Clase para lista desordenada con imagen (punto) personalizada */
 ul.puntos {
   margin-bottom: 15px;
 }
@@ -172,8 +171,7 @@ ul.puntos li{
   margin-left: 20px;
 }
 
-/* footer y columnas del footer */
-
+/* Estilo del footer y columnas del footer */
 footer {
   border-top: 3px solid rgb(241 250 140);
   background-color: rgba(68, 71, 90, 0.897);
