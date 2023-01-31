@@ -73,10 +73,13 @@ nav li a {
 #landing {
   width: 100%;
   height: calc(100vh - 60px);  /* vh (viewport height) es el porcentaje de la altura actual del navegador */
-  
+  overflow: hidden;
+  padding: 15px;
+
   background-image: url(./img/background.jpg);
   background-size: cover;
   background-attachment: fixed;
+  border-bottom: rgb(255, 121, 198) 3px solid;
 
   font-family: 'Cinzel Decorative', cursive;
   font-weight: bolder;
@@ -86,10 +89,6 @@ nav li a {
 
 #landingTitle {
   height: 100%;
-  overflow:hidden;
-  position:relative;
-  top: 10%;
-  bottom: 10%;
   color: rgb(255 184 108);
   text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
 }
@@ -106,7 +105,6 @@ nav li a {
   background-color: rgb(40, 42, 54);
   padding: 30px 60px;
   overflow: hidden;
-  border-top: rgb(255, 121, 198) 3px solid;
 }
 
 .columnaIzquierda {
@@ -140,6 +138,7 @@ nav li a {
 
 h1{
   font-family: 'Cinzel', serif;
+  text-align: center;
 }
 
 h2 {
@@ -154,10 +153,21 @@ p{
   margin-bottom: 7px;
 }
 
+hr{
+  border: none;
+  height: 3px;
+  width: 50%;
+  background-color: rgb(255 184 108);
+  margin-top: 15px;
+  margin-bottom: 15px;
+  margin-right: auto;
+  border-radius: 10px;
+}
+
 h3 {
   font-family: 'Cinzel', serif;
   font-weight: normal;
-  color: rgb(241 250 140);
+  color: rgb(241, 250, 140);
   margin-bottom: 15px;
 }
 
@@ -178,8 +188,6 @@ footer {
   width: 100%;
   padding: 30px 60px;
   overflow: hidden;
-
-
 }
 
 .footerColumna {
