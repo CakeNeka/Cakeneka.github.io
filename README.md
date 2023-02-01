@@ -1,20 +1,23 @@
 # Proyecto HTML & CSS (2º Trimestre)
-## [Página](https://cakeneka.github.io)
+## [LVX AETERNA Studios](https://cakeneka.github.io)
 
 ### Importante ⚠
 
-Los commits del segundo proyecto comienzan a partir del llamado ("Proyecto 2º Trimestre").
+  - Los commits del segundo proyecto comienzan a partir del llamado ("Proyecto 2º Trimestre").
+  - Probado en navegador Google Chrome con resoluciones 1920x1080 y 1366x768.
 
-Probado en navegador Google Chrome con resoluciones 1920x1080 y 1366x768.
+---
 
 ### Descripción 📋
 
 **Temática** 🕹 
 
+Página web de una empresa de desarrollo de videojuegos
+
 **Tecnologías utilizadas** ⚙
 
-  - HTML
-  - CSS 
+  1. HTML
+  1. CSS 
 
 **Recursos utilizados** ⛰
 
@@ -24,7 +27,7 @@ Probado en navegador Google Chrome con resoluciones 1920x1080 y 1366x768.
 
 **Requisitos** ✔
 
-  - [ ] Elementos maquetas adecuadamente.
+  - [ ] Elementos maquetados adecuadamente.
   - [ ] Al menos 6 páginas.
   - [x] Hoja de estilo común.
   - [ ] Sección Inicio.
@@ -36,4 +39,9 @@ Probado en navegador Google Chrome con resoluciones 1920x1080 y 1366x768.
   - [ ] Archivos ordenados.
   - [ ] Etiquetas meta.
 
-**Explicaciones**
+---
+
+### Explicaciones
+
+**Propiedades CSS no vistas en clase**
+  - b
