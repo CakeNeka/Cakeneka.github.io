@@ -34,10 +34,11 @@ Página web de una empresa de desarrollo de videojuegos
   - [ ] Tabla.
   - [x] Lista.
   - [ ] Visor de imágenes.
+  - [x] Formulario
   - [ ] Texto.
   - [ ] Archivos validados.
   - [ ] Archivos ordenados.
-  - [ ] Etiquetas meta.
+  - [x] Etiquetas meta.
 
 ---
 

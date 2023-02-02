@@ -97,6 +97,7 @@ nav li a {
   width: 10%;
 }
 
+
 /* Capa contenedora y columnas derecha, central e izquierda */
 /* Para la maquetación del cuerpo de la página */
 #contenedor {
@@ -118,7 +119,8 @@ nav li a {
 }
 
 /* Otras clases para la maquetación */
-.presentacion {
+section {
+  display: block;
   width: 100%;
   background-color: rgba(0, 0, 0, 0.61);
   padding: 20px;
@@ -186,7 +188,7 @@ ul.puntos li{
 
 /* Estilo del footer y columnas del footer */
 footer {
-  border-top: 3px solid rgb(241 250 140);
+  border-top: 3px solid rgb(241, 250, 140);
   background-color: rgba(68, 71, 90, 0.897);
   width: 100%;
   padding: 30px 60px;
@@ -207,12 +209,12 @@ footer img {
 
 footer img:hover {
   border-radius: 20%;
-  background-color: rgb(241 250 140) ;
+  background-color: rgb(241, 250, 140) ;
 }
 
 footer a {
   text-decoration: none;
-  color: rgb(241 250 140);;
+  color: rgb(241, 250, 140);;
   font-weight: 150;
 }
 
