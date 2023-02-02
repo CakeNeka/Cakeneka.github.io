@@ -8,7 +8,7 @@
 body {
   font-family: Verdana, sans-serif;
   color: rgb(248, 248, 242);
-  background-image: url(./img/alfombra.png);
+  background-image: url(../img/alfombra.png);
   background-repeat: repeat;
   background-attachment: fixed;
 }
@@ -76,7 +76,7 @@ nav li a {
   overflow: hidden;
   padding: 15px;
 
-  background-image: url(./img/background.jpg);
+  background-image: url(../img/background.jpg);
   background-size: cover;
   background-attachment: fixed;
   border-bottom: rgb(255, 121, 198) 3px solid;
@@ -139,6 +139,7 @@ nav li a {
 h1{
   font-family: 'Cinzel', serif;
   text-align: center;
+  color: rgb(255 184 108);
 }
 
 h2 {
@@ -147,6 +148,13 @@ h2 {
   margin-bottom: 10px;
   font-weight: bold;
   color: rgb(255, 121, 198);
+}
+
+h3 {
+  font-family: 'Cinzel', serif;
+  font-weight: normal;
+  color: rgb(241, 250, 140);
+  margin-bottom: 15px;
 }
 
 p{
@@ -164,12 +172,7 @@ hr{
   border-radius: 10px;
 }
 
-h3 {
-  font-family: 'Cinzel', serif;
-  font-weight: normal;
-  color: rgb(241, 250, 140);
-  margin-bottom: 15px;
-}
+
 
 /* Clase para lista desordenada con imagen (punto) personalizada */
 ul.puntos {
@@ -177,7 +180,7 @@ ul.puntos {
 }
 
 ul.puntos li{
-  list-style-image: url("./img/punto.png");
+  list-style-image: url("../img/punto.png");
   margin-left: 20px;
 }
 
