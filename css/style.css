@@ -6,7 +6,7 @@
 }
 
 body {
-  font-family: Verdana, sans-serif;
+  font-family: 'Roboto serif', serif;
   color: rgb(248, 248, 242);
   background-image: url(../img/alfombra.png);
   background-repeat: repeat;
@@ -38,7 +38,6 @@ nav ul {
 
 nav li {
   float: left;
-  transition: background-color 300ms ease-out;
   height: 60px;
   width: 130px;
 }
@@ -73,7 +72,7 @@ nav li a {
 #landing {
   width: 100%;
   height: calc(100vh - 60px);  /* vh (viewport height) es el porcentaje de la altura actual del navegador */
-  overflow: hidden;
+  overflow: hidden;            /* Le resto el tamaño de la barra de navegación*/
   padding: 15px;
 
   background-image: url(../img/background.jpg);
@@ -118,7 +117,6 @@ nav li a {
   width: 45%;
 }
 
-/* Otras clases para la maquetación */
 section {
   display: block;
   width: 100%;
@@ -126,6 +124,12 @@ section {
   padding: 20px;
   margin-top: 20px;
   border-radius: 15px;
+}
+
+.contenedorHorizontal {
+  width: 100%;
+  overflow: hidden;
+  margin-top: 25px;
 }
 
 /* Clases para imágenes */
