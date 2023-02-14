@@ -45,4 +45,11 @@ Página web de una empresa de desarrollo de videojuegos
 ### Explicaciones
 
 **Propiedades CSS no vistas en clase**
-  - b
+  - **Fondo** 
+    - *Background-attachment: fixed;* --> El fondo estará fijo en la pantalla y no se moverá con el bloque contenedor.
+    - *Background-repeat: repeat;* -->
+  - **nav**
+    - *Position: sticky;*  -->
+    - *transform: translate(0%, -50%);* -->
+
+   
