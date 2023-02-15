@@ -19,13 +19,8 @@ body {
 
 nav {
   width: 100%;
-  /*
-  background-color: rgb(0, 0, 0);
-  background: linear-gradient(180deg, rgb(0, 0, 0) 0%, rgba(0,0,0,1) 50%, rgb(94, 94, 94) 100%);
-  */ 
-
-  background: rgb(131,58,180);
-  background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%);
+  background: rgb(40,42,54);
+  background: linear-gradient(78deg, rgba(40,42,54,1) 5%, rgba(194,152,254,1) 95%);
   top: 0;
   position: sticky;
   z-index: 2;
@@ -59,7 +54,8 @@ nav li a {
   display: block;
   text-align: center;
   text-decoration: none;
-  color: rgb(255, 121, 198);
+  color:rgb(241, 250, 140);;
+  font-weight: bold;
   padding: 25px;
   position: relative;
   top: 50%;
@@ -149,6 +145,7 @@ section {
 .celda img {
   display: block;
   margin: auto;
+  width: 30%;
 }
 
 /* Clases para imágenes */
@@ -160,6 +157,10 @@ section {
 }
 
 /* Reglas de estilo de los títulos */
+
+.alineacionDerecha{
+  text-align: right;
+}
 
 h1{
   font-family: 'Cinzel', serif;
