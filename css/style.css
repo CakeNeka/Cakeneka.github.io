@@ -138,6 +138,10 @@ section {
   border-radius: 5px;
 }
 
+.presentacion:hover{
+  transform: scale(1.01);
+}
+
 .contenedorHorizontal {
   display: table;
   width: 100%;
@@ -164,7 +168,13 @@ section {
   float: left;
   height: 130px;
   border-radius: 50%;
+  transition: border-radius 200ms ease-in;
   margin-right: 40px;
+}
+
+.profile:hover{
+  border-radius: 12%;
+  transition: border-radius 200ms ease-out;
 }
 
 /* Reglas de estilo de los títulos */
@@ -237,14 +247,15 @@ footer {
 }
 
 footer img {
-  height: 50px;
-  width: 50px;
+  height: 60px;
+  width: 60px;
   padding: 10px;
 }
 
 footer img:hover {
   border-radius: 20%;
-  background-color: rgb(241, 250, 140) ;
+  transform: translate(0, -10px);
+  transition: transform 200ms ease-out;
 }
 
 footer a {
