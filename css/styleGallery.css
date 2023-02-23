@@ -1,16 +1,5 @@
 /* Reglas css para la galería*/
 
-#galeria{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    margin: 40px 20px 0 20px;
-}
-
-#galeria .fila{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+.contenedor-galeria{
+    display: grid;
 }
