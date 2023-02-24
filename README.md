@@ -30,7 +30,7 @@ Página web de una empresa de desarrollo de videojuegos
   - [ ] Elementos maquetados adecuadamente.
   - [ ] Al menos 6 páginas.
   - [x] Hoja de estilo común.
-  - [ ] Sección Inicio.
+  - [x] Sección Inicio.
   - [ ] Tabla.
   - [x] Lista.
   - [ ] Visor de imágenes.
