@@ -189,6 +189,7 @@ box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 h1{
   font-family: 'Cinzel', serif;
   text-align: center;
+  font-size: 2.5em;
   color: rgb(255 184 108);
 }
 
@@ -259,6 +260,11 @@ hr{
   transition: transform 100ms ease-out;
 }
 
+.divider {
+  display: block;
+  margin: auto;
+  width: 60%;
+}
 /* Clase para lista desordenada con imagen (punto) personalizada */
 ul.puntos {
   margin-bottom: 15px;

@@ -1,3 +1,12 @@
+.contenedor-galeria {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+  grid-auto-rows: minmax(200px, auto);
+  gap: 20px;
+  padding: 20px;
+  grid-auto-flow: dense;
+}
+
 .grid-item {
   display: flex;
   align-items: center;
@@ -10,6 +19,9 @@
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+
+  background-image: url("../img/background.jpg");
+  min-height: 400px;
 }
 
 .grid-item:hover {
@@ -17,11 +29,15 @@
   transform: scale(1.04);
 }
 
-.contenedor-galeria {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-  grid-auto-rows: minmax(200px, auto);
-  gap: 20px;
-  padding: 20px;
-  grid-auto-flow: dense;
+.item1 {
+  grid-column-start: 1;
+  grid-column-end: -1;
+}
+
+.ancho {
+  grid-column: span 2;
+}
+
+.alto {
+  grid-row: span 2;
 }
