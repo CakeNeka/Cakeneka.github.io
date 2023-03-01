@@ -11,6 +11,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  overflow: hidden;
 
   background-color: #03afff;
   border-radius: 4px;
@@ -27,6 +28,14 @@
 .grid-item:hover {
   filter: opacity(0.9);
   transform: scale(1.04);
+}
+
+.grid-item img {
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  object-fit: cover;
 }
 
 .item1 {
