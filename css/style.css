@@ -189,6 +189,11 @@ section {
   border-radius: 12%;
 }
 
+.divider {
+  display: block;
+  margin: 0 auto 40px auto;
+  width: 60%;
+}
 /* Reglas de estilo de los títulos */
 
 .alineacionDerecha {
@@ -230,6 +235,10 @@ hr {
   margin-bottom: 15px;
   margin-right: auto;
   border-radius: 10px;
+}
+
+.center {
+  text-align: center;
 }
 
 /* Reglas de estilo para la página 'Historia' */
@@ -287,12 +296,12 @@ hr {
   border-bottom-left-radius: 30px;
   border-top-left-radius: 10px;
   border-bottom-right-radius: 10px;
-  
+
   box-shadow: rgba(206, 206, 206, 0.35) 0px 5px 10px 0;
   transition: all ease-in-out 300ms;
 }
 
-.mapa iframe:hover{
+.mapa iframe:hover {
   width: 100%;
 }
 
@@ -302,11 +311,70 @@ hr {
   transition: transform ease-in-out 100ms;
 }
 
-.divider {
-  display: block;
-  margin: auto;
-  width: 60%;
+/* Reglas de estilo para la página catálogo (Tienda) */
+
+
+.grid-catalogo {
+  display: grid;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  /* grid-template-columns: repeat(auto-fit, minmax(270px, 1fr)); */
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 100px;
+  place-items: center; 
 }
+
+
+.grid-catalogo .tarjeta { 
+  width: 300px;
+  height: 500px;
+  border: 1px solid gray;
+  border-radius: 5px;
+  background-color: rgb(68 71 90);
+  text-align: center;
+  padding: 30px 20px;
+  transition: all ease-out 200ms;
+}
+
+.grid-catalogo .tarjeta:hover {
+  box-shadow: 0 20px 0px 0px rgb(255, 121, 198);
+  border: 1px solid rgb(255, 121, 198);
+  color: rgb(255, 121, 198);
+  transform: translateY(-20px);
+}
+
+.grid-catalogo .tarjeta img {
+  display: block;
+  margin: 0 auto 20px auto;
+  width: 200px;
+  height: 200px;
+  border-radius: 9px;
+}
+
+.grid-catalogo .tarjeta p {
+  line-height: 1.5;
+}
+
+.grid-catalogo .tarjeta .btn {
+  margin-top: 10px;
+  display: inline-block;
+  text-decoration: none;
+  background-color: rgb(139, 233, 253);
+  color: white;
+  border-radius: 5px;
+  padding: 8px 25px;
+  transition: all ease-out 200ms;
+}
+
+
+
+.grid-catalogo .tarjeta .btn:hover {
+  letter-spacing: 1px;
+}
+
+
+
+
 /* Clase para lista desordenada con imagen (punto) personalizada */
 ul.puntos {
   margin-bottom: 15px;

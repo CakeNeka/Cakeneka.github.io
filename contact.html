@@ -13,13 +13,13 @@
 <body>
   <nav>
     <ul>
-      <li><a href="">Equipo</a></li>
+      <li><a href="equipo.html">Equipo</a></li>
       <li class="actual"><a href="contact.html">Contacto</a></li>
-      <li><a href="">Catálogo</a></li>
-      <li><a href="index.html"><img src="../img/helmet.png" alt="logo" id="navImg"></a></li>
-      <li><a href="">Historia</a></li>
-      <li><a href="">Acerca de</a></li>
-      <li><a href="">Contenido</a></li>
+      <li><a href="historia.html">Historia</a></li>
+      <li><a href="index.html"><img src="./img/helmet.png" alt="logo" id="navImg"></a></li>
+      <li><a href="catalogo.html">Tienda</a></li>
+      <li><a href="galeria.html">Galería</a></li>
+      <li><a href="nosotros.html">Nosotros</a></li>
     </ul>
   </nav>
 
@@ -34,13 +34,13 @@
           <legend>Datos Personales</legend>
           <label for="name">Nombre Completo *</label> <br>
           <input type="text" id="name" name="nombre" required /> <br>
-          <label for="">Dirección</label> <br>
+          <label for="direccion">Dirección</label> <br>
           <input type="text" id="direccion" name="direccion" /> <br>
-          <label for="">Código Postal</label> <br>
+          <label for="CP">Código Postal</label> <br>
           <input type="text" id="CP" name="CP" /> <br>
-          <label for="">Correo Electrónico *</label> <br>
+          <label for="correo">Correo Electrónico *</label> <br>
           <input type="text" id="correo" name="correo" required/> <br>
-          <label for="">Número de teléfono</label> <br>
+          <label for="telefono">Número de teléfono</label> <br>
           <input type="text" id="telefono" name="telefono" /> <br>
         </fieldset>
 
@@ -60,9 +60,8 @@
 
         <fieldset>
           <legend>Introduzca su mensaje</legend>
-          <label for="fortalezas">Introduzca el comentario a continuación *</label> <br>
-          <textarea name="fortalezas" rows="10" cols="60" required> </textarea> <br>
-
+          <label for="comentario">Introduzca el comentario a continuación *</label> <br>
+          <textarea name="comentario" id="comentario" rows="10" cols="60" required> </textarea> <br>
         </fieldset>
 
         <fieldset>
@@ -71,15 +70,15 @@
           <label for="age">Aetate Imperiorum II</label> <br>
           <input type="radio" id="Caelestia" name="best_game" value="Sacred" />
           <label for="Caelestia">Caelestia</label> <br>
-          <input type="radio" id="Tenebris Animarum" name="best_game" value="pro" />
-          <label for="Tenebris Animarum">Tenebris Animarum</label> <br>
+          <input type="radio" id="TenebrisAnimarum" name="best_game" value="pro" />
+          <label for="TenebrisAnimarum">Tenebris Animarum</label> <br>
           <input type="radio" id="otro" name="best_game" value="Overwatch" />
           <label for="otro">Otro</label>
         </fieldset>
         <hr>
 
         <input type="submit" value="Enviar">
-
+      </form>
     </div>
   </main>
 
