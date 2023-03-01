@@ -1,5 +1,5 @@
 # Proyecto HTML & CSS (2º Trimestre)
-## [LVX AETERNA Studios](https://cakeneka.github.io)
+## [:link: LVX AETERNA Studios](https://cakeneka.github.io)
 
 ### Importante ⚠
 
@@ -42,14 +42,15 @@ Página web de una empresa de desarrollo de videojuegos
 
 ---
 
-### Explicaciones
+### Explicaciones :key:
 
 **Propiedades CSS no vistas en clase**
   - **Fondo** 
-    - *Background-attachment: fixed;* --> El fondo estará fijo en la pantalla y no se moverá con el bloque contenedor.
-    - *Background-repeat: repeat;* --> La imagen de fondo se repite cuanto sea necesario para ocupar todo el contenedor.
+    - `Background-attachment: fixed;` → El fondo estará fijo en la pantalla y no se moverá con el bloque contenedor.
+    - `Background-repeat: repeat;` → La imagen de fondo se repite cuanto sea necesario para ocupar todo el contenedor.
   - **nav**
-    - *Position: sticky;*  --> El elemento se mantiene en la posición de su contenedor hasta que alcanza el borde superior de la pantalla, entonces se mantendrá fijo en el borde superior.
-    - *transform: translate()* --> Desplaza el elemento desde su posición inicial según los valores que se pasen como parámetro, que serán dos longitudes, la primera en el eje 'x' y la segunda en el eje 'y'.
-
+    - `Position: sticky;`  → El elemento se mantiene en la posición de su contenedor hasta que alcanza el borde superior de la pantalla, entonces se mantendrá fijo en el borde superior.
+    - `transform: translate(x, y);` → Desplaza el elemento desde su posición inicial según los valores que se pasen como parámetro, que serán dos longitudes, la primera en el eje 'x' y la segunda en el eje 'y'.
+  - **Animaciones**
+    - `transition: <Propiedad> <Duración> <efecto>;` → Cambia gradualmente entre dos estados. Por ejemplo, cambiar el color poco a poco cuando el ratón se pose sobre un elemento
    
