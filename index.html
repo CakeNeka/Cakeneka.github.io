@@ -2,57 +2,279 @@
 <html lang="en">
 
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-    <title>reveal.js</title>
+  <title>reveal.js</title>
 
-    <link rel="stylesheet" href="dist/reset.css">
-    <link rel="stylesheet" href="dist/reveal.css">
-    <link rel="stylesheet" href="dist/theme/black.css">
+  <link rel="stylesheet" href="dist/reset.css">
+  <link rel="stylesheet" href="dist/reveal.css">
+  <link rel="stylesheet" href="dist/theme/blood.css">
 
-    <!-- Theme used for syntax highlighted code -->
-    <link rel="stylesheet" href="plugin/highlight/monokai.css">
+  <!-- Theme used for syntax highlighted code -->
+  <link rel="stylesheet" href="plugin/highlight/monokai.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap"
+    rel="stylesheet">
+  <style>
+    .reveal .left p {
+      text-align: left;
+    }
+
+    .reveal .left h4 {
+      text-align: left;
+    }
+
+    .reveal .left ul {
+      display: block;
+    }
+
+    .reveal .left ol {
+      display: block;
+    }
+
+    .reveal .grid {
+      margin: 20px auto;
+      width: 400px;
+      height: 400px;
+      background-color: #fff;
+      display: grid;
+      grid-template-columns: 200px 200px;
+      grid-row: auto auto;
+      grid-column-gap: 20px;
+      grid-row-gap: 20px;
+    }
+
+    .reveal .red {
+      color: #a23;
+    }
+
+    .reveal .flex {
+      display: flex;
+      /* align-items: center;
+      justify-content: center; */
+      justify-content: left;
+      height: 100%;
+      width: 900px;
+      gap: 10px;
+    }
+
+    .reveal .full-height {
+      height: 100%;
+    }
+
+    .reveal .full-width {
+      width: 100%;
+    }
+
+    .reveal .tools {
+      display: flex;
+      justify-content: space-evenly;
+      align-items: center;
+    }
+
+    .reveal .flex {
+      display: flex;
+    }
+
+    .reveal .col {
+      flex: 1;
+    }
+
+    .reveal .bg-default {
+      background-color: #222;
+    }
+  </style>
 </head>
 
 <body>
-    <div class="reveal">
-        <div class="slides">
-            <section>
-                Que te digan la verdad
-            </section>
-            <section>
-                <section>
-                    Que no te engañen
-                </section>
-                <section>
-                    Google presentaciones
-                </section>
-                <section>
-                    kk
-                </section>
-            </section>
-            <section>
-                Es verdad!
-            </section>
+  <div class="reveal">
+    <div class="slides">
+      <section class="center">
+        <h1 class="r-fit-text">Unholy Typing</h1>
+
+        <h4 class="red"><i>Por Martina Victoria</i></h2>
+          <a href="https://github.com/cakeneka"><img src="./img/g.png" alt="github logo" width="100"></a>
+          <a href="https://github.com/cakeneka"><img src="./img/itch.svg" alt="github logo" width="100"></a>
+      </section>
+      <section class="left">
+        <h3>Índice</h3>
+
+        <ol>
+          <li>Introducción</li>
+          <li>Herramientas
+            <!--ul>
+                            <li>Control de versiones: <b>Git</b></li>
+                            <li>Continuous Deployment: <b>Github</b></li>
+                            <li>Idea inicial</li>
+            </ul-->
+          </li>
+          <li>El juego</li>
+          <li>Planificación</li>
+          <li>Detalles del desarrollo</li>
+          <li>Demostración</li>
+          <li>Conclusiones</li>
+        </ol>
+      </section>
+
+      <section>
+        <section class="center">
+          <h2>Introducción</h2>
+        </section>
+        <section>
+          <h3>Posibles Propuestas</h3>
+          <div class="r-stack">
+            <div class="fragment fade-out full-height" data-fragment-index="0">
+              <h4>1. Aventura basada en texto</h4>
+              <div class="flex">
+                <img src="img/zork1.png" width="400" />
+                <br>
+                <p class="left" style="display: block;">
+                <ul>
+                  <li>ZORK</li>
+                </ul>
+                </p>
+              </div>
+            </div>
+
+            <div class="fragment current-visible full-height" data-fragment-index="0">
+
+              <h4>2. MUD</h4>
+              <div class="flex">
+                <img src="img/zork1.png" width="400" />
+                <br>
+                <ul>
+                  <li>Multi User Dungeon</li>
+                  <li>Parecido al anterior pero <span class="red">multijugador</span></li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="fragment current-visible full-height" data-fragment-index="1">
+
+              <h4>3. MUD</h4>
+              <div class="flex">
+                <img src="img/zork1.png" width="400" />
+                <br>
+                <ul>
+                  <li>Multi User Dungeon</li>
+                  <li>Parecido al anterior pero <span class="red">multijugador</span></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section>
+          <h3>Elección final</h3>
+          <h4>Juego de mecanografía</h4>
+          <div class="r-stack">
+            <div class="fragment fade-out flex" data-fragment-index="0">
+              <img src="img/ut.png" alt="unholy typing" height="200">
+              <ul>
+                <li>añlskdfj</li>
+              </ul>
+            </div>
+            <img src="img/ztype.gif.gif" width="300" alt="zty.pe" data-fragment-index="0" class="fragment">
+          </div>
+        </section>
+      </section>
+      </section>
+      <section>
+        <h2>Herramientas</h2>
+        <div class="tools">
+          <img src="img/unity.png" alt="" width="100">
+          <img src="img/csharp.png" alt="" width="100">
+          <img src="img/vscode.png" alt="" width="100">
+          <img src="img/git.png" alt="" width="100" height="100">
+          <img src="img/g.png" alt="" width="100">
+          <img src="img/rjs.svg" alt="" width="100">
         </div>
+        <br>
+        <div class="r-stack">
+          <div class="fragment fade-down left full-width bg-default" data-fragment-index="0">
+            <h4>Unity</h4>
+            <div class="flex">
+              <div class="col">
+                <ul>
+                  <li></li>
+                </ul>
+              </div>
+              <div class="col">
+                <ul>
+                  <li></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="fragment fade-down left full-width bg-default" data-fragment-index="1">
+            <h4>C#</h4>
+            <div class="flex">
+              <div class="col">
+                <ul>
+                  <li></li>
+                </ul>
+              </div>
+              <div class="col">
+                <ul>
+                  <li></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="fragment fade-down left full-width bg-default" data-fragment-index="2">
+            <h4>Git y GitHub</h4>
+            <div class="flex">
+              <div class="col">
+                <ul>
+                  <li></li>
+                </ul>
+              </div>
+              <div class="col">
+                <ul>
+                  <li></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="fragment fade-down left full-width bg-default" data-fragment-index="3">
+            <h4>Slides.js</h4>
+            <div class="flex">
+              <div class="col">
+                <ul>
+                  <li></li>
+                </ul>
+              </div>
+              <div class="col">
+                <ul>
+                  <li></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section data-background-iframe="https://cakeneka.github.io/Unholy-Typing/" data-background-interactive>
+      </section>
     </div>
+  </div>
 
-    <script src="dist/reveal.js"></script>
-    <script src="plugin/notes/notes.js"></script>
-    <script src="plugin/markdown/markdown.js"></script>
-    <script src="plugin/highlight/highlight.js"></script>
-    <script>
-        // More info about initialization & config:
-        // - https://revealjs.com/initialization/
-        // - https://revealjs.com/config/
-        Reveal.initialize({
-            hash: true,
+  <script src="dist/reveal.js"></script>
+  <script src="plugin/notes/notes.js"></script>
+  <script src="plugin/markdown/markdown.js"></script>
+  <script src="plugin/highlight/highlight.js"></script>
+  <script>
+    // More info about initialization & config:
+    // - https://revealjs.com/initialization/
+    // - https://revealjs.com/config/
+    Reveal.initialize({
+      hash: true,
+      center: false,
 
-            // Learn about plugins: https://revealjs.com/plugins/
-            plugins: [RevealMarkdown, RevealHighlight, RevealNotes]
-        });
-    </script>
+      // Learn about plugins: https://revealjs.com/plugins/
+      plugins: [RevealMarkdown, RevealHighlight, RevealNotes]
+    });
+  </script>
 </body>
 
 </html>
