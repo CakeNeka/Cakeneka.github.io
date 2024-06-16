@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-  <title>reveal.js</title>
+  <title>Presentación</title>
 
   <link rel="stylesheet" href="dist/reset.css">
   <link rel="stylesheet" href="dist/reveal.css">
@@ -17,8 +17,13 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap"
     rel="stylesheet">
+  <link rel="shortcut icon" href="img/red_guy.png" type="image/x-icon">
   <style>
     .reveal .left p {
+      text-align: left;
+    }
+
+    .left {
       text-align: left;
     }
 
@@ -52,12 +57,14 @@
 
     .reveal .flex {
       display: flex;
-      /* align-items: center;
-      justify-content: center; */
       justify-content: left;
-      height: 100%;
-      width: 900px;
       gap: 10px;
+      width: 900px;
+      font-size: 0.8em;
+    }
+
+    .small {
+      font-size: 0.8em;
     }
 
     .reveal .full-height {
@@ -74,7 +81,7 @@
       align-items: center;
     }
 
-    .reveal .flex {
+    .reveal .tools-flex {
       display: flex;
     }
 
@@ -84,6 +91,10 @@
 
     .reveal .bg-default {
       background-color: #222;
+    }
+
+    .reveal .codeblock {
+      width: 100%;
     }
   </style>
 </head>
@@ -98,24 +109,19 @@
           <a href="https://github.com/cakeneka"><img src="./img/g.png" alt="github logo" width="100"></a>
           <a href="https://github.com/cakeneka"><img src="./img/itch.svg" alt="github logo" width="100"></a>
       </section>
-      <section class="left">
+      <section>
         <h3>Índice</h3>
 
-        <ol>
-          <li>Introducción</li>
-          <li>Herramientas
-            <!--ul>
-                            <li>Control de versiones: <b>Git</b></li>
-                            <li>Continuous Deployment: <b>Github</b></li>
-                            <li>Idea inicial</li>
-            </ul-->
-          </li>
-          <li>El juego</li>
-          <li>Planificación</li>
-          <li>Detalles del desarrollo</li>
-          <li>Demostración</li>
-          <li>Conclusiones</li>
-        </ol>
+        <div class="left">
+          <ol>
+            <li>Introducción</li>
+            <li>Herramientas </li>
+            <li>Planificación</li>
+            <li>Detalles del desarrollo</li>
+            <li>Demostración</li>
+            <li>Conclusiones</li>
+          </ol>
+        </div>
       </section>
 
       <section>
@@ -123,57 +129,90 @@
           <h2>Introducción</h2>
         </section>
         <section>
+          <aside class="notes">
+            ZORK: más dificil de lo que parece por mapa (y movimiento), objetos,
+            elementos del escenario, sistema de verbos, descripción de cada
+            escena. Interacción de objetos. También posibilidad de hacerlo online (MUD)
+            <br>
+            SOKOBAN: Juego de puzzles de mover cajas en una cuadrícula.
+          </aside>
           <h3>Posibles Propuestas</h3>
           <div class="r-stack">
             <div class="fragment fade-out full-height" data-fragment-index="0">
               <h4>1. Aventura basada en texto</h4>
+              <br>
               <div class="flex">
-                <img src="img/zork1.png" width="400" />
-                <br>
-                <p class="left" style="display: block;">
-                <ul>
-                  <li>ZORK</li>
-                </ul>
-                </p>
+                <div class="col">
+                  <img src="img/zork1.png" width="300" />
+                </div>
+                <div class="col left">
+                  <ul>
+                    <li>Juego similar a ZORK</li>
+                    <li>Se juega escribiendo en una terminal</li>
+                  </ul>
+                  <br>
+                  <span class="red left">Desventajas:</span>
+                  <ul>
+                    <li>Más dificil de lo que parece</li>
+                    <li>Complicado de entender y poco visual</li>
+                  </ul>
+                </div>
               </div>
             </div>
 
             <div class="fragment current-visible full-height" data-fragment-index="0">
-
-              <h4>2. MUD</h4>
+              <h4>2. Juego de PMDMO</h4>
+              <br>
               <div class="flex">
-                <img src="img/zork1.png" width="400" />
-                <br>
-                <ul>
-                  <li>Multi User Dungeon</li>
-                  <li>Parecido al anterior pero <span class="red">multijugador</span></li>
-                </ul>
+                <div class="col">
+                  <img src="img/tonk.gif" width="200" />
+                </div>
+                <div class="col left">
+                  <ul>
+                    <li>Continuación del juego desarrollado para el módulo de PMDMO</li>
+                    <li>Controlas a un tanque que dispara automáticamente</li>
+                  </ul>
+                </div>
               </div>
             </div>
 
             <div class="fragment current-visible full-height" data-fragment-index="1">
-
-              <h4>3. MUD</h4>
+              <h4>3. Heroes of Sokoban</h4>
+              <br>
               <div class="flex">
-                <img src="img/zork1.png" width="400" />
-                <br>
-                <ul>
-                  <li>Multi User Dungeon</li>
-                  <li>Parecido al anterior pero <span class="red">multijugador</span></li>
-                </ul>
+                <div class="col">
+                  <img src="img/red_guy.png" width="150" />
+                </div>
+                <div class="col left">
+                  <ul>
+                    <li>Este <a href="https://github.com/CakeNeka/Heroes-of-Sokoban-Unity-Clone/">sí que lo hice</a> :)
+                    </li>
+                    <li>No me parece buena idea para proyecto porque es un clon</li>
+                  </ul>
+                </div>
               </div>
             </div>
           </div>
         </section>
+
         <section>
+          <aside class="notes">
+            Diferencias entre idea original y final
+
+            (gráficos, efectos, etc)
+
+            Monkeytype
+          </aside>
           <h3>Elección final</h3>
           <h4>Juego de mecanografía</h4>
           <div class="r-stack">
             <div class="fragment fade-out flex" data-fragment-index="0">
-              <img src="img/ut.png" alt="unholy typing" height="200">
-              <ul>
-                <li>añlskdfj</li>
-              </ul>
+              <div class="col">
+                <img src="img/ut.png" alt="unholy typing" height="200">
+              </div>
+              <div class="col left">
+                Decidí hacer un juego de mecanografía porque me gusta mucho la mecanografía.
+              </div>
             </div>
             <img src="img/ztype.gif.gif" width="300" alt="zty.pe" data-fragment-index="0" class="fragment">
           </div>
@@ -181,6 +220,13 @@
       </section>
       </section>
       <section>
+        <aside class="notes">
+          UNITY: Me habría gustado hacerlo con Godot, que es foss
+          Funcionamiento mediante GameObjects y componentes en una Scene (nivel)
+          Experiencia previa: clones desarrollados (Sokoban, Bloons, Tower defense)
+          <br>
+          GIT: conventional commits, git log, CD
+        </aside>
         <h2>Herramientas</h2>
         <div class="tools">
           <img src="img/unity.png" alt="" width="100">
@@ -190,71 +236,200 @@
           <img src="img/g.png" alt="" width="100">
           <img src="img/rjs.svg" alt="" width="100">
         </div>
-        <br>
         <div class="r-stack">
-          <div class="fragment fade-down left full-width bg-default" data-fragment-index="0">
+
+          <div class="fragment fade-down fade-out left full-width" data-fragment-index="1">
+            <br>
             <h4>Unity</h4>
             <div class="flex">
               <div class="col">
                 <ul>
-                  <li></li>
-                </ul>
-              </div>
-              <div class="col">
-                <ul>
-                  <li></li>
+                  <li>Motor de videojuegos 2D y 3D, el más popular para el desarrollo independiente</li>
+                  <li>Experiencia previa</li>
+                  <li>Editor gráfico</li>
+                  <li>Utiliza <span class="red">C#</span> para scripts</li>
                 </ul>
               </div>
             </div>
           </div>
-          <div class="fragment fade-down left full-width bg-default" data-fragment-index="1">
+
+          <div class="fragment fade-down current-visible left full-width bg-default" data-fragment-index="1">
             <h4>C#</h4>
             <div class="flex">
               <div class="col">
                 <ul>
-                  <li></li>
-                </ul>
-              </div>
-              <div class="col">
-                <ul>
-                  <li></li>
+                  <li>Lenguaje orientado a objetos muy similar a <span class="red">Java</span> pero con características
+                    más modernas</li>
+                  <li>Desarrollado por Microsoft</li>
                 </ul>
               </div>
             </div>
           </div>
-          <div class="fragment fade-down left full-width bg-default" data-fragment-index="2">
+
+          <div class="fragment fade-down current-visible left full-width bg-default" data-fragment-index="2">
             <h4>Git y GitHub</h4>
             <div class="flex">
               <div class="col">
                 <ul>
-                  <li></li>
-                </ul>
-              </div>
-              <div class="col">
-                <ul>
-                  <li></li>
+                  <li>Especialmente útil en proyectos colaborativos</li>
+                  <li>Es importante utilizar control de versiones en cualquier proyecto</li>
+                  <li>Con GitHub tienes otras herramientas (pages, actions, projects) que complementan a git</li>
                 </ul>
               </div>
             </div>
           </div>
+
           <div class="fragment fade-down left full-width bg-default" data-fragment-index="3">
-            <h4>Slides.js</h4>
+            <h4>reveal.js</h4>
             <div class="flex">
               <div class="col">
                 <ul>
-                  <li></li>
-                </ul>
-              </div>
-              <div class="col">
-                <ul>
-                  <li></li>
+                  <li>Para construir presentaciones con HTML y CSS</li>
+                  <li>Por lo general muy útil, además quedan presentaciones bonitas aún dedicando poco tiempo</li>
+                  <li>Pueden surgir complicaciones un poco absurdas</li>
                 </ul>
               </div>
             </div>
           </div>
         </div>
       </section>
+
+      <section>
+        <h2>Planificación</h2>
+        <div class="left">
+          <p>
+            Se ha utilizado GitHub Projects para la planificación del proyecto.
+          </p>
+          <div class="r-stack">
+            <img class="fragment" src="img/kanbanghprojects.png" alt="">
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <section>
+          <h2 class="r-fit-text">Detalles del desarrollo</h2>
+          <aside class="notes">
+            - Tiempo: En realidad es un poco más porque empecé a contar desde el 20 de abril
+            Bloques de código
+          </aside>
+          <div class="left">
+            <h4>Tiempo invertido</h4>
+            <div class="flex">
+              <div class="col">
+                <ul>
+                  <li>Desarrollo</li>
+                  <li>Documentación</li>
+                  <li>Presentación</li>
+                </ul>
+                <br>
+                <ul>
+                  <li>Total</li>
+                </ul>
+              </div>
+              <div class="col">
+                <b>
+                  41h*<br>
+                  10h<br>
+                  7h<br>
+                  <br>
+                  <span class="red">58h</span>
+                </b>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="center">
+          <h4 class="left">GitHub Actions y GitHub Pages</h4>
+          <img src="img/ghactions.png" alt="GitHub actions screenshot" width="700">
+        </section>
+        <section>
+          <h4 class="left">Detalles del código</h4>
+          <aside class="notes">
+            Nunca hay más de dos niveles de anidación
+            patrón singleton
+            LINQ en C# para hacer consultas tipo SQL sobre colecciones del sistema
+            principio de responsabilidad única
+          </aside>
+          <div class="r-stack">
+            <div class="fragment codeblock left small fade-out" data-fragment-index="0">
+              <b>Patrones de diseño</b>
+              <pre><code data-trim data-noescape data-line-numbers>
+public static GameManager Instance { get; private set; }
+private void Awake() {
+    if (Instance != null && Instance != this) {
+        Destroy(this);
+    } else {
+        Instance = this;
+    }
+}
+            </code></pre>
+              <b>Características de C#</b>
+              <pre><code data-trim data-noescape data-line-numbers="7-8" data-ln-start-from="8">
+public float AverageCPM {
+    get {
+        if (typedWords.Count() == 0)
+            return defaultTypingSpeed;
+        
+        return CalculateTypingSpeed(
+            typedWords.Select(c => c.word.Count()).Sum(),
+            typedWords.Select(c => c.seconds).Sum()
+        );
+    }
+}
+            </code></pre>
+            </div>
+
+            <div class="fragment codeblock current-visible left small" data-fragment-index="0">
+              <b>Single Responsability Principle</b>
+              <pre><code data-trim data-noescape data-line-numbers>
+public class ScoreCalculator {
+    public int CurrentScore { get; private set; }
+
+    public void WordTyped(WordCPM wordCPM, float averageCPMLast10) {
+        GameManager gm = GameManager.Instance;
+        int perfectBonus = gm.config.perfectWordBonus;
+        int pointsPerCharacter = gm.config.pointsPerCharacter;
+
+        float cpmMultiplier = gm.getCPMScoreMultiplier(averageCPMLast10);
+        float wordAccuracy = (float)wordCPM.word.Count() /
+            (wordCPM.word.Count() + wordCPM.misses);
+
+        CurrentScore += (int)(wordCPM.word.Count() * pointsPerCharacter 
+            * cpmMultiplier * wordAccuracy);
+
+        CurrentScore += wordAccuracy == 1f ? perfectBonus : 0;
+    }
+}
+            </code></pre>
+            </div>
+          </div>
+        </section>
+        <section class="center">
+          <h4 class="left">Diagrama de flujo</h4>
+          <img src="img/flowchart.svg" alt="flowchart" width="700">
+        </section>
+
+      </section>
+
       <section data-background-iframe="https://cakeneka.github.io/Unholy-Typing/" data-background-interactive>
+      </section>
+
+      <section>
+        <aside class="notes">
+          - Git y github, actions y pages.
+          - Conceptos en gamedev:
+          - tiempo
+          - componentes
+          - start / update awake / fixedupdate
+        </aside>
+        <h2>Conclusiones</h2>
+        <div class="left">
+          <ol>
+            <li>Conceptos aprendidos</li>
+            <li>Posibles mejoras</li>
+          </ol>
+        </div>
       </section>
     </div>
   </div>
